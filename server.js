@@ -2,9 +2,12 @@
  * Created by brady on 2019/6/20.
  */
 const express = require('express');
+const cors = require('cors');
 
 const app = express();
 
+// 处理跨域
+app.use(cors())
 // 静态文件托管
 app.use('/static', express.static('public'))
 
