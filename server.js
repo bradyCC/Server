@@ -5,6 +5,9 @@ const express = require('express');
 
 const app = express();
 
+// 静态文件托管
+app.use('/static', express.static('public'))
+
 app.get('/', (req, res) => {
   res.send({path: 'Home'});
 });
