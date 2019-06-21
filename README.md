@@ -55,5 +55,24 @@ Product.insertMany([])
 // 全部删除
 Product.deleteMany({})
 
+// 输出JSON数据
+Product.find().lean()
 ```
+
+## 五、关联建模
+```javascript
+const Category = mongoose.model('Category', new mongoose.Schema({
+  name: { type: String },
+}))
+const Post = mongoose.model('Post', new mongoose.Schema({
+  title: { type: String },
+  body: { type: String },
+  category: { type: mongoose.SchemaTypes.ObjectId, ref: 'Category' }, // 设置type、ref
+}))
+
+
+
+```
+
+
 
