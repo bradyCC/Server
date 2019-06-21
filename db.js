@@ -62,3 +62,8 @@ let main = async () => {
   // console.log(JSON.stringify(cats))
 }
 main()
+
+// 英文转换
+const inflection = require('inflection')
+const name = inflection.classify('users')
+console.log(`App/Models/${name}`)
