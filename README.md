@@ -73,9 +73,6 @@ const Post = mongoose.model('Post', new mongoose.Schema({
   body: { type: String },
   category: { type: mongoose.SchemaTypes.ObjectId, ref: 'Category' }, // 设置type、ref
 }))
-
-
-
 ```
 
 
