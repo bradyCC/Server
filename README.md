@@ -57,6 +57,10 @@ Product.deleteMany({})
 
 // 输出JSON数据
 Product.find().lean()
+
+// 清空数据表
+Product.db.dropCollection('products')
+
 ```
 
 ## 五、关联建模
