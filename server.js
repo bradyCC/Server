@@ -15,16 +15,16 @@ const Product = mongoose.model('Product', new mongoose.Schema({title: String}), 
 const cors = require('cors')
 // 处理跨域
 app.use(cors())
+// 解析body
+app.use(express.json())
 
 // 静态文件托管
 app.use('/static', express.static('public'))
 
-//
 app.get('/', (req, res) => {
   res.send({path: 'Home'})
 })
 
-//
 app.get('/about', (req, res) => {
   res.send({path: 'About Us'})
 })
@@ -41,9 +41,28 @@ app.get('/products/:id', async (req, res) => {
   res.send(data)
 })
 
+// 新增产品
+app.post('/products', async (req, res) => {
+  const data = req.body
+  const product = await Product.create(data)
+  res.send(product)
+})
 
+// 编辑产品
+app.put('/products/:id', async (req, res) => {
+  const product = await Product.findById(req.params.id)
+  product.title = req.body.title
+  await product.save()
+  res.send(product)
+})
 
-//
+// 删除产品
+app.delete('/products/:id', async (req, res) => {
+  const product = await Product.findById(req.params.id)
+  await product.remove()
+  res.send({success: true})
+})
+
 app.listen(3000, () => {
   console.log('App listening on port 3000')
 })

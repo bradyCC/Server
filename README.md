@@ -37,13 +37,23 @@ Product.find().sort({_id: 1}) // 排序 1-正序 2-倒序
 Product.findOne({_id: req.params.id}) // URL传参查询
 Product.findById(req.params.id) // ID查询
 
+// 插入数据
+Product.create({}) // 插入一条数据
 
-// 全部删除
-Product.deleteMany({})
+// 修改数据
+const product = await Product.findById(req.params.id) // 获取执行编辑的数据
+product.title = req.body.title // 编辑
+await product.save() //保存编辑后数据
+
+// 删除数据
+const product = await Product.findById(req.params.id) // 获取执行删除的数据
+await product.remove() // 删除
 
 // 批量插入
 Product.insertMany([])
 
+// 全部删除
+Product.deleteMany({})
 
 ```
 
