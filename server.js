@@ -76,7 +76,9 @@ app.delete('/products/:id', async (req, res) => {
 })
 
 // 注册
-app.post('/api/register', async (req, res) => {
+app.post('/api/register', async (req, res, next) => {
+  if (!req.body.username) return next(createError(422, '请输入用户名'))
+  if (!req.body.password) return next(createError(422, '请输入密码'))
   const user = await User.create({
     username: req.body.username,
     password: req.body.password

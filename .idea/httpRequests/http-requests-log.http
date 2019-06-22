@@ -1,0 +1,259 @@
+POST http://localhost:3000/api/register
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"user1","password":"123456"}
+
+###
+
+POST http://localhost:3000/api/login
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"user2","password":"123456"}
+
+<> 2019-06-22T083110.200.json
+
+###
+
+POST http://localhost:3000/api/register
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"user2","password":"123456"}
+
+<> 2019-06-22T083054.200.json
+
+###
+
+POST http://localhost:3000/api/register
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"user1","password":"123456"}
+
+<> 2019-06-22T082950.200.json
+
+###
+
+POST http://localhost:3000/api/login
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"user1","password":"123456"}
+
+<> 2019-06-22T082942.422.json
+
+###
+
+POST https://localhost:3000/api/login
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"user1","password":"123456"}
+
+###
+
+POST http://localhost:3000/api/register
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"user1","password":"123456"}
+
+###
+
+POST https://localhost:3000/api/login
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"user1","password":"123456"}
+
+###
+
+POST https://localhost:3000/api/register
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"user1","password":"123456"}
+
+###
+
+POST https://localhost:3000/api/register
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"user1","password":"123456"}
+
+###
+
+POST http://localhost:3000/api/register
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"user1","password":123456}
+
+###
+
+POST http://localhost:3000/api/register
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"user1","password":"123456"}
+
+###
+
+POST http://localhost:3000/api/register
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"user1"}
+
+<> 2019-06-22T082329.422.json
+
+###
+
+POST http://localhost:3000/api/register
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+<> 2019-06-22T082313.422.json
+
+###
+
+DELETE http://localhost:3000/products/5d0d74600efaaa2b63fdc662
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"title":"测试编辑"}
+
+<> 2019-06-22T082138.200.json
+
+###
+
+PUT http://localhost:3000/products/5d0d74600efaaa2b63fdc662
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"title":"测试编辑"}
+
+<> 2019-06-22T082122.200.json
+
+###
+
+POST http://localhost:3000/products/5d0d74600efaaa2b63fdc662
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"title":"测试编辑"}
+
+<> 2019-06-22T082118.404.html
+
+###
+
+POST http://localhost:3000/products
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"title":"产品4"}
+
+<> 2019-06-22T082048.200.json
+
+###
+
+POST http://localhost:3000/api/register
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"user1","password":"123456"}
+
+###
+
+GET http://localhost:3000/products/5d0b6ee420f9fb21d3e5305e
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"user1","password":"123456"}
+
+<> 2019-06-22T082020.200.json
+
+###
+
+GET http://localhost:3000/products
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"user1","password":"123456"}
+
+<> 2019-06-22T082006.200.json
+
+###
+
+POST http://localhost:3000/api/register
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"user1","password":"123456"}
+
+###
+
+POST http://localhost:3000/api/login
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json
+
+{"username":"user1"}
+
+<> 2019-06-22T081458.422.json
+
+###
+
+POST http://localhost:3000/api/login
+Accept: */*
+Cache-Control: no-cache
+
+{"username":"user1"}
+
+<> 2019-06-22T081426.422.json
+
+###
+
+POST http://localhost:3000/api/login
+Accept: */*
+Cache-Control: no-cache
+
+{"username":"user1"}
+
+<> 2019-06-22T081419.422.json
+
+###
+
+POST http://localhost:3000/api/login
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-06-22T081403.422.json
+
+###
+
